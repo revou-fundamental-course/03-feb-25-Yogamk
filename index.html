@@ -9,9 +9,20 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <!-- Fixed NavBar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="https://www.linkedin.com/in/myogakurniawan8">Contact</a>
+    </div>
+
     <header class="main-header">
         <h1>Konversi Suhu</h1>
     </header>
+
+    <!-- Notifikasi -->
+    <div id="toast-notification"></div>
 
     <main>
         <!-- Introduction -->
@@ -23,16 +34,16 @@
 
         <!-- Form Input Suhu yang Ingin Dikonversi-->
         <section>
-            <form>
+            <form id="formkonversi">
                 <div class="input-group">
                     <label for="main-input">Celcius :</label>
-                    <input type="number" id="main-input">
+                    <input class="main-input" type="number" id="main-input" placeholder="Masukkan Nilai Suhu">
                 </div>
 
                 <div class="button-group">
-                    <button class="bg-aquamarine">Konversi</button>
-                    <button class="bg-green">Reset</button>
-                    <button class="bg-gray">Reverse</button>
+                    <button class="buttonKonversi" type="button" id="buttonKonversi">Konversi</button>
+                    <button class="buttonReset" type="button" id="buttonReset">Reset</button>
+                    <button class="buttonReverse" type="button" id="buttonReverse">Reverse</button>
                 </div>
             </form>
         </section>
@@ -41,7 +52,7 @@
         <section>
             <div class="input-group">
                 <label for="main-result">Fahrenheit</label>
-                <input type="text" id="main-result" readonly>
+                <input type="text" id="main-result" placeholder="Hasil Konversi" readonly>
             </div>
         </section>
 
@@ -49,7 +60,7 @@
         <section>
             <div class="input-group">
                 <label for="how-konversi">Cara Konversi:</label>
-                <input type="text" id="how-konversi">
+                <input type="text" id="how-konversi" placeholder="Rumus Konversi" readonly>
             </div>
         </section>
 
@@ -62,14 +73,25 @@
             <hr>
 
             <article>
-                <p>Suhu <span class="remark">S</span></p>
-                <p>S<sub>(&deg;F)</sub></p>
+                <p>Suhu <span class="remark">S</span> dalam derajat Fahrenheit (&deg;F)
+                sama dengan suhu <span class="remark">S</span> dalam derajat Celcius (&deg;C)
+                kali 9/5 tambah 32</p>
+                <p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub>X 9/5) + 32</p>
+                <p>atau</p>
+                <p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub>X 1.8) + 32</p>
             </article>
         </section>
     </main>
 
-    <footer>
-        <p>Made by Yoga 2025</p>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="https://www.linkedin.com/in/myogakurniawan8">Contact</a>
+        </div>
+        <p>&copy; 2025 Muhammad Yoga Kurniawan. All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
