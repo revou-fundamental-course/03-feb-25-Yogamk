@@ -141,29 +141,8 @@ button {
 
 /*Footer*/
 footer {
-    background-color: #1a1a1a;
-    color: white;
+    color: black;
     text-align: center;
-    font-size: 16px;
-    position: relative;
-    padding: 50px 30px;
-    margin-top: 60px;
-}
-
-.footer-links {
-    margin: 20px 0;
-}
-
-.footer-links a {
-    color: white !important;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-.footer-links a:hover {
-    color: antiquewhite !important;
-    text-decoration: underline;
 }
 
 /* Notifikasi Mengambang */
